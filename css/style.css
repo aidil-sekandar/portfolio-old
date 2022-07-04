@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  height: 6em;
+}
+
+header > .container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.title-div {
+  display: flex;
+  align-items: center;
+}
+
+.title-div > a {
+  font-size: 2rem;
+  color: rgb(30, 41, 59);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  gap: 1.3em;
+}
+
+nav > a {
+  color: rgb(102, 112, 129);
+  padding: 0.3em 1.2em;
+  transition: all 0.3 ease-in-out;
+}
+
+nav > a:hover {
+  background-color: rgba(102, 112, 129, 0.1);
+  border-radius: 9999px;
+}
+
+.active-menu {
+  color: #111827;
+}
+
+.contact-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+}
+
+.contact-div > a {
+  color: white;
+  background-color: rgb(30, 41, 59);
+  padding: 0.4em 1.3em;
+  border-radius: 9999px;
+}
+
+.contact-div > a:hover {
+  outline: rgb(30, 41, 59);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-1 {
+  flex-basis: 73%;
+}
+
+.featured-text > h1 {
+  font-size: 2.6rem;
+  line-height: 140%;
+}
+
+.highlited-text {
+  background-color: rgb(30, 41, 59);
+  padding: 0 0.2em;
+  border-radius: 10px;
+  color: white;
+}
+
+.btn-div {
+  margin-top: 2em;
+  display: flex;
+  gap: 2em;
+}
+
+.btn-div > a {
+  font-size: 1.2rem;
+  padding: 0.9rem 1.7rem;
+  background-color: wheat;
+  border-radius: 9999px;
+  border: 5px solid transparent;
+  outline: 5px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-div > a:hover {
+  border: 5px solid white;
+  outline: 5px solid rgb(30, 41, 59);
+}
+
+.btn-div > :nth-child(1) {
+  color: white;
+  background-color: rgb(30, 41, 59);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn-div > :nth-child(2) {
+  color: rgb(30, 41, 59);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.col-2 {
+  flex-basis: 25%;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.back-to-top {
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  align-items: center;
+  position: fixed;
+  background-color: black;
+  color: white;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}

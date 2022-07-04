@@ -1,0 +1,36 @@
+footer {
+  margin-top: 6rem;
+  height: 10em;
+  background-color: rgba(238, 238, 238, 0.89);
+}
+
+footer > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.3em;
+}
+
+.social-links > a {
+  font-size: 2rem;
+  color: black;
+}
+
+footer > .container > p {
+  font-size: 1.2rem;
+  color: black;
+}
+
+footer > .container > p > a {
+  color: hsl(250, 19%, 27%);
+}
+
+footer > .container > p > a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+.about {
+  margin-top: 6rem;
+  padding: 2em 0;
+  border-top: 2px solid rgb(30, 41, 59);
+  border-bottom: 2px solid rgb(30, 41, 59);
+}
+
+.about-col {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+  padding: 1em 3em;
+}
+
+.about-col-2 {
+  flex-basis: 65%;
+  display: flex;
+  align-items: center;
+}
+
+.about-col-2-texts > h2 {
+  font-size: 2.5rem;
+}
+
+.about-col-2-texts > p {
+  font-size: 1.2rem;
+}

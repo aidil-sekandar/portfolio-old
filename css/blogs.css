@@ -1,0 +1,38 @@
+.blogs {
+  margin-top: 6em;
+}
+
+.blogs-title {
+  font-size: 2rem;
+}
+
+.blogs-card > a {
+  width: fit-content;
+  font-size: 1.7rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  color: black;
+}
+
+.blogs-card > a:hover {
+  text-decoration: underline;
+}
+
+.blogs-card > p {
+  font-size: 1.1rem;
+  line-height: 160%;
+  color: hsl(250, 19%, 27%);
+}
+
+.blogs-card > h4 {
+  font-size: 1.1rem;
+  color: hsl(250, 19%, 27%);
+}
+
+.blogs-card {
+  display: grid;
+  gap: 1em;
+  padding: 1.2em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}
