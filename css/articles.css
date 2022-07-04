@@ -1,12 +1,12 @@
-.blogs {
+.articles {
   margin-top: 6em;
 }
 
-.blogs-title {
+.articles-title {
   font-size: 2rem;
 }
 
-.blogs-card > a {
+.articles-card > a {
   width: fit-content;
   font-size: 1.7rem;
   font-weight: bold;
@@ -14,24 +14,39 @@
   color: black;
 }
 
-.blogs-card > a:hover {
+.articles-card > a:hover {
   text-decoration: underline;
 }
 
-.blogs-card > p {
+.articles-card > p {
   font-size: 1.1rem;
   color: hsl(250, 19%, 27%);
 }
 
-.blogs-card > h4 {
+.articles-card > h4 {
   font-size: 1.1rem;
   color: hsl(250, 19%, 27%);
 }
 
-.blogs-card {
+.articles-card {
   display: grid;
   gap: 1em;
   padding: 1.2em;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
+}
+
+.read-more-articles {
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.read-more-articles > a {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.read-more-articles > a:hover {
+  text-decoration: underline;
 }

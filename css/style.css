@@ -22,7 +22,11 @@ li {
 
 header {
   height: 6em;
-  position: sticky;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 header > .container {
@@ -51,10 +55,13 @@ nav {
   gap: 1em;
 }
 
+.close-btn {
+  display: none;
+}
+
 nav > a {
   color: rgb(102, 112, 129);
   padding: 0.3em 1.2em;
-  transition: all 0.3 ease-in-out;
 }
 
 nav > a:hover {
@@ -74,18 +81,14 @@ nav > a:hover {
   cursor: pointer;
 }
 
-.active-menu {
-  color: #111827;
-}
-
 .container {
   max-width: 900px;
   margin: auto;
-  padding: 1em;
+  padding: 1.3em;
 }
 
 .hero {
-  margin-top: 6rem;
+  margin-top: calc(6em + 6rem);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -211,6 +214,38 @@ img {
 @media (max-width: 780px) {
   nav {
     display: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(255, 255, 255);
+    position: absolute;
+    width: 15em;
+    height: fit-content;
+    padding: 1em 0;
+    right: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 0;
+  }
+
+  .close-btn {
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 0 1em;
+    display: block;
+    text-align: end;
+  }
+
+  .close-btn > i {
+    cursor: pointer;
+  }
+
+  nav > a {
+    color: rgb(102, 112, 129);
+    width: 100%;
+  }
+
+  nav > a:hover {
+    color: black;
+    border-radius: 0;
   }
 
   .hamburger-menu {

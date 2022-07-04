@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/projects.css" />
-    <link rel="stylesheet" href="./css/blogs.css" />
+    <link rel="stylesheet" href="./css/articles.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="./index.js" defer></script>
     <title>Aidil Iskandar</title>
   </head>
   <body>
@@ -25,14 +26,17 @@
         <div class="title-div">
           <a href="/">Aidil.</a>
         </div>
-        <div class="hamburger-menu">
+        <div id="hamburger-menu" class="hamburger-menu">
           <i class="ri-menu-line"></i>
         </div>
-        <nav>
-          <a href="/" class="active-menu">Home</a>
+        <nav id="nav">
+          <div class="close-btn">
+            <i id="close-btn" class="ri-close-line"></i>
+          </div>
+          <a href="/">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="/blogs">Blogs</a>
+          <a href="/articles">Articles</a>
         </nav>
       </div>
     </header>
@@ -40,15 +44,15 @@
       <section class="hero">
         <div class="col-1">
           <div class="featured-text">
-            <h1><span class="highlited-text">Aidil Iskandar</span> is a student, frontend developer, lorem and ipsum.</h1>
+            <h1><span class="highlited-text">Aidil Iskandar</span> is a student, frontend developer and math & physics enthusiasts.</h1>
           </div>
           <div class="btn-div">
-            <a href="#blogs">Read the blog</a>
-            <a href="#">More about me</a>
+            <a href="#articles">Read the blog</a>
+            <a href="#projects">Look at My Projects</a>
           </div>
         </div>
         <div class="col-2">
-          <img src="./assets/profile picture.png" alt="profile picture" />
+          <img src="./assets/icon.jpg" alt="profile picture" />
         </div>
       </section>
       <section class="about" id="about">
@@ -59,7 +63,7 @@
           <div class="about-col-2">
             <div class="about-col-2-texts">
               <h2>Aidil Iskandar</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur optio porro autem. Aperiam soluta facilis porro animi adipisci nemo nulla quibusdam, rerum possimus, et eius sed! Ab expedita ipsum et?</p>
+              <p>Hi, I'm Aidil Iskandar. Currently studying at Alam Shah Science School (ASiS) in Malaysia. Coding is one of my hobbies after watching Youtube or Tiktok. I also love studying physics and math (I think that's obvious).</p>
             </div>
           </div>
         </div>
@@ -89,38 +93,39 @@
           </div>
         </div>
       </section>
-      <section class="blogs" id="blogs">
-        <h1 class="blogs-title">Recently Published</h1>
+      <section class="articles" id="articles">
+        <h1 class="articles-title">Recently Published</h1>
         <div class="projects-grid">
-          <div class="blogs-card">
+          <div class="articles-card">
             <a href="#">Tajuk</a>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore dicta in quidem voluptate? Non ipsum iure beatae temporibus velit.</p>
             <h4>4 July 2022</h4>
           </div>
-          <div class="blogs-card">
+          <div class="articles-card">
             <a href="#">Tajuk</a>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore dicta in quidem voluptate? Non ipsum iure beatae temporibus velit.</p>
             <h4>4 July 2022</h4>
           </div>
-          <div class="blogs-card">
+          <div class="articles-card">
             <a href="#">Tajuk</a>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore dicta in quidem voluptate? Non ipsum iure beatae temporibus velit.</p>
             <h4>4 July 2022</h4>
           </div>
-          <div class="blogs-card">
+          <div class="articles-card">
             <a href="#">Tajuk</a>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore dicta in quidem voluptate? Non ipsum iure beatae temporibus velit.</p>
             <h4>4 July 2022</h4>
           </div>
         </div>
+        <div class="read-more-articles"><a href="#" target="_blank">Read more article</a><i class="ri-arrow-right-s-line"></i></div>
       </section>
     </div>
     <footer>
       <div class="container">
         <div class="social-links">
-          <a href="#"><i class="ri-instagram-line"></i></a>
-          <a href="#"><i class="ri-twitter-line"></i></a>
-          <a href="#"><i class="ri-github-line"></i></a>
+          <a href="https://www.instagram.com/aidil_sekandar/" target="_blank"><i class="ri-instagram-line"></i></a>
+          <a href="https://twitter.com/4idil_sekandar" target="_blank"><i class="ri-twitter-line"></i></a>
+          <a href="https://github.com/aidil-sekandar" target="_blank"><i class="ri-github-line"></i></a>
         </div>
         <p>2022 © <a href="/">Aidil Iskandar</a> , All Rights Reserved</p>
       </div>
