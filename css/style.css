@@ -22,12 +22,13 @@ li {
 
 header {
   height: 6em;
+  position: sticky;
 }
 
 header > .container {
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
 }
 
 .title-div {
@@ -47,7 +48,7 @@ nav {
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
-  gap: 1.3em;
+  gap: 1em;
 }
 
 nav > a {
@@ -61,26 +62,20 @@ nav > a:hover {
   border-radius: 9999px;
 }
 
-.active-menu {
-  color: #111827;
-}
-
-.contact-div {
+.hamburger-menu {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-size: 1.2rem;
+  display: none;
 }
 
-.contact-div > a {
-  color: white;
-  background-color: rgb(30, 41, 59);
-  padding: 0.4em 1.3em;
-  border-radius: 9999px;
+.hamburger-menu > i {
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-.contact-div > a:hover {
-  outline: rgb(30, 41, 59);
+.active-menu {
+  color: #111827;
 }
 
 .container {
@@ -214,9 +209,12 @@ img {
 }
 
 @media (max-width: 780px) {
-  nav,
-  .contact-div {
+  nav {
     display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
   }
 }
 
