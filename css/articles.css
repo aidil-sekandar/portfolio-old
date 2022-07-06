@@ -6,7 +6,7 @@
   font-size: 2rem;
 }
 
-.articles-card > a {
+.articles-card > a:nth-child(1) {
   width: fit-content;
   font-size: 1.7rem;
   font-weight: bold;
@@ -14,7 +14,7 @@
   color: black;
 }
 
-.articles-card > a:hover {
+.articles-card > a:nth-child(1):hover {
   text-decoration: underline;
 }
 
@@ -49,4 +49,24 @@
 
 .read-more-articles > a:hover {
   text-decoration: underline;
+}
+
+.physics-tags {
+  font-size: 1rem;
+  color: #22543d;
+  background-color: #c6f6d5;
+  width: fit-content;
+  padding: 0.3em 0.8em;
+  border-radius: 9999px;
+}
+
+.web-development-tags {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #44337a;
+  background-color: #e9d8fd;
+  width: fit-content;
+  padding: 0.3em 0.8em;
+  border-radius: 9999px;
 }
