@@ -60,6 +60,15 @@
   border-radius: 9999px;
 }
 
+.math-tags {
+  font-size: 1rem;
+  color: #7e0d45;
+  background-color: #ffcdfb;
+  width: fit-content;
+  padding: 0.3em 0.8em;
+  border-radius: 9999px;
+}
+
 .web-development-tags {
   display: flex;
   align-items: center;
